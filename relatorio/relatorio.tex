@@ -1,0 +1,66 @@
+%Guia basico de Latex - https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes
+
+\documentclass[12pt, a4paper]{article} % Define tipo de documento + tamando da fonte e paper
+\usepackage{graphicx}
+\usepackage[portuguese]{babel}         % Traduz elementos automaticamente para o Portugues (ex: Contents -> Sumário)
+\usepackage{amsmath, amsfonts}          % Biblioteca de simbolos matemáticos
+\usepackage{fontspec}                  % Pacote para carregar fontes do sistema
+
+
+% Define a fonte local indicando o caminho (Path)
+\setmainfont{NewsGothicStd}
+
+\begin{document}        %Inicio de um conteudo
+
+\begin{titlepage}
+    \centering
+
+    %logotipo
+    \includegraphics[width=0.35\textwidth]{logo.png}\\[1cm]
+    
+
+    %Nome da fac + Curso e Cadeira
+    {\large \textbf{Universidade do Minho}}\\[0.2cm]
+    {\large \textbf{Licenciatura em Engenharia Informática}}\\[0.2cm]
+    {\normalsize \textbf{Bases de Dados}}\\[2cm]
+
+    %Autores
+    {\large Karen Martins (a113225)}\\[0.3cm]
+    {\large Seu Nome (axxxxxx)}\\[3cm]
+
+
+    %Titulo
+    {\Huge \bfseries{Relatório}}\\[0.2cm]
+    {\Large \textit{Conceção e Implementação de um Sistema de Bases de Dados Relacional}}
+    \vfill
+
+    {\large Braga}\\[0.2cm]
+    {\large {\today}}
+
+\end{titlepage}
+
+\clearpage
+\pagenumbering{arabic}
+
+\section{Definição do Sistema}
+
+\subsection{Contexto de Aplicação} 
+Elaboração do contexto de Aplicação de uma base de dados para um clínica veterinária
+
+\subsection{Motivação e Objetivos do Trabalho}
+
+\subsection{Análise da Viabilidade do Processo}
+
+\subsection{Recursos e Equipa de Trabalho}
+
+\subsection{Plano de Execução do Projeto}
+
+
+\section{Levantamento e Análise de Requisitos}
+
+\end{document}
+
+%Instalar Latex (Ubuntu) > sudo apt update && sudo apt install texlive-full
+%Instalei a extensao LateX Workshop do VScode
+%Instalei as (arquivo "news-gothic") Fontes (É preciso confirmar se esta correta)
+%$ Para Gerar PDF > xelatex relatorio.tex 
